@@ -123,7 +123,7 @@ ElectroHub-sales-data-analysis-powerbi/
 │
 ├── README.md
 ├── ElectroHub_Sales_Analysis.pbit
-├── Requirements.png
+├── business-requirements.png
 ├── dataset/
 │   └── ElectroHubStore-Sales-Data.xlsx
 └── screenshots/
