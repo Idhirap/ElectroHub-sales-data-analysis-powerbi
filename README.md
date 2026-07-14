@@ -111,7 +111,6 @@ The Power BI dashboard includes the following interactive pages and visualizatio
 - Data Cleaning and Transformation using Power Query
 - Data Modeling (Star Schema)
 - DAX Measures and Calculated Columns
-- Time Intelligence
 - Interactive Dashboard Design
 - KPI Reporting
 - Business Intelligence and Data Visualization
