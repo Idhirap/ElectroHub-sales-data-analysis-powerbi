@@ -126,7 +126,7 @@ ElectroHub-sales-data-analysis-powerbi/
 ├── dataset/
 │   └── ElectroHubStore-Sales-Data.xlsx
 └── screenshots/
-    ├── overview.png
+    ├── dashboard-overview.png
     ├── top-bottom-analysis.png
     ├── comparison-sales-profit-quantitysold.png
     ├── table-visual.png
