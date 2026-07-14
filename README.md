@@ -80,7 +80,7 @@ The Power BI dashboard includes the following interactive pages and visualizatio
 
 ### Dashboard Overview
 
-![Dashboard Overview](screenshots/overview.png)
+![Dashboard Overview](screenshots/dashboard-overview.png)
 
 ---
 
