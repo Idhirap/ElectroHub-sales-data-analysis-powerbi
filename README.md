@@ -121,7 +121,9 @@ The Power BI dashboard includes the following interactive pages and visualizatio
 ElectroHub-sales-data-analysis-powerbi/
 │
 ├── README.md
-├── ElectroHub_Sales_Analysis.pbit
+├── ElectroHub_Sales_Analysis.pbip
+├── ElectroHub_Sales_Analysis.Report/
+├── ElectroHub_Sales_Analysis.SemanticModel/
 ├── business-requirements.png
 ├── dataset/
 │   └── ElectroHubStore-Sales-Data.xlsx
