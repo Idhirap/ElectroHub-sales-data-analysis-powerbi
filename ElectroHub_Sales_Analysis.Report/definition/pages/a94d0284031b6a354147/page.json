@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "a94d0284031b6a354147",
+  "displayName": "Edit Interactions",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "1b66973fb1272cd9160e",
+      "target": "0dafc7f8f79664b08b68",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1b66973fb1272cd9160e",
+      "target": "b0cff9365585d0c9ad94",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1b66973fb1272cd9160e",
+      "target": "8c76d63d5a3960f51540",
+      "type": "NoFilter"
+    },
+    {
+      "source": "116a32d04e86a87b0905",
+      "target": "b4bbef4ba26d21fac01d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "116a32d04e86a87b0905",
+      "target": "7868825723844f9d1ed1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "116a32d04e86a87b0905",
+      "target": "0ec4b4226519b58e8590",
+      "type": "NoFilter"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+table 'Dim Promotion'
+	lineageTag: 66bef3ec-d4dc-46a0-8562-7b05e9c93e4d
+
+	measure 'SUM Dim' = SUM('Fact Table'[Net Sales  ])
+		lineageTag: c5a10528-6582-48ba-b090-b4307bea8a18
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PromotionID
+		dataType: string
+		lineageTag: c3f4d8ac-59de-4df7-84fb-915344a83ccc
+		summarizeBy: none
+		sourceColumn: PromotionID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Promotion Name'
+		dataType: string
+		lineageTag: c4ee071a-29b2-449c-99f9-2acb40e578e1
+		summarizeBy: none
+		sourceColumn: Promotion Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ad Type'
+		dataType: string
+		lineageTag: 1e5ca957-1704-45e7-859b-1604071a9e9f
+		summarizeBy: none
+		sourceColumn: Ad Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Coupon Code'
+		dataType: string
+		lineageTag: 70cd08a9-1d03-4f21-9e3e-26d5b45640f8
+		summarizeBy: none
+		sourceColumn: Coupon Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Price Reduction Type'
+		dataType: string
+		lineageTag: 12948282-76ce-4916-81cc-b88f55c43b94
+		summarizeBy: none
+		sourceColumn: Price Reduction Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Percentage
+		dataType: int64
+		formatString: 0
+		lineageTag: a2d6d2ce-862f-4203-94db-f7f5dd495dd0
+		summarizeBy: none
+		sourceColumn: Percentage
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Dim Promotion' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\Admin\Desktop\PowerBI\Store+Data.xlsx"), null, true),
+				    #"Dim Promotion _Sheet" = Source{[Item="Dim Promotion ",Kind="Sheet"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(#"Dim Promotion _Sheet",{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}}),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"PromotionID", type text}, {"Promotion Name", type text}, {"Ad Type", type text}, {"Coupon Code", type text}, {"Price Reduction Type", type text}}),
+				    #"Added Conditional Column" = Table.AddColumn(#"Changed Type1", "Percentage", each if [PromotionID] = "PR001" then 20 else if [PromotionID] = "PR002" then 10 else if [PromotionID] = "PR003" then 50 else if [PromotionID] = "PR004" then 50 else 70),
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Added Conditional Column",{{"Percentage", Int64.Type}})
+				in
+				    #"Changed Type2"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

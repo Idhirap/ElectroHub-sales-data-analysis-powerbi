@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "ElectroHub_Sales_Analysis"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "48428185-f9dc-41f7-bdad-c1a65b5fb341"
+  }
+}

@@ -1,0 +1,521 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c976e08d97f46446b379",
+  "position": {
+    "x": 15.30499766464269,
+    "y": 142.33647828117702,
+    "z": 0,
+    "height": 566.28491359177951,
+    "width": 1239.704810836058,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "CustomerID"
+                }
+              },
+              "queryRef": "Fact Table.CustomerID",
+              "nativeQueryRef": "CustomerID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "OrderID"
+                }
+              },
+              "queryRef": "Fact Table.OrderID",
+              "nativeQueryRef": "OrderID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Product ID"
+                }
+              },
+              "queryRef": "Fact Table.Product ID",
+              "nativeQueryRef": "Product ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "PromotionID"
+                }
+              },
+              "queryRef": "Fact Table.PromotionID",
+              "nativeQueryRef": "PromotionID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Date (dd/mm/yyyy)"
+                }
+              },
+              "queryRef": "Fact Table.Date (dd/mm/yyyy)",
+              "nativeQueryRef": "Date (dd/mm/yyyy)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Discount"
+                }
+              },
+              "queryRef": "Sum(Fact Table.Discount)",
+              "nativeQueryRef": "Discount1",
+              "displayName": "Discount"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Discount Percentage"
+                }
+              },
+              "queryRef": "Sum(Fact Table.Discount Percentage)",
+              "nativeQueryRef": "Discount Percentage1",
+              "displayName": "Discount Percentage"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Net Sales  "
+                }
+              },
+              "queryRef": "Sum(Fact Table.Net Sales  )",
+              "nativeQueryRef": "Net Sales  1",
+              "displayName": "Net Sales  "
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Price Per Unit"
+                }
+              },
+              "queryRef": "Sum(Fact Table.Price Per Unit)",
+              "nativeQueryRef": "Price Per Unit1",
+              "displayName": "Price Per Unit"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Profit"
+                }
+              },
+              "queryRef": "Sum(Fact Table.Profit)",
+              "nativeQueryRef": "Profit1",
+              "displayName": "Profit"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Total Sales  "
+                }
+              },
+              "queryRef": "Sum(Fact Table.Total Sales  )",
+              "nativeQueryRef": "Total Sales  "
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Units Sold"
+                }
+              },
+              "queryRef": "Sum(Fact Table.Units Sold)",
+              "nativeQueryRef": "Units Sold"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Fact Table"
+                  }
+                },
+                "Property": "CustomerID"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.3
+                    }
+                  }
+                }
+              }
+            },
+            "gridHorizontalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "3D"
+                }
+              }
+            },
+            "gridVerticalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.3
+                    }
+                  }
+                }
+              }
+            },
+            "gridVerticalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "3D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Times New Roman'''"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'FlashyRows'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "51c1cbda9e13e573c9bd",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table"
+              }
+            },
+            "Property": "CustomerID"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "2be25418c846c2e288f0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table"
+              }
+            },
+            "Property": "Date (dd/mm/yyyy)"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ff9c811851cf5bfe3e41",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table"
+              }
+            },
+            "Property": "Discount"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d0df4db445428a93e5b9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table"
+              }
+            },
+            "Property": "Discount Percentage"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c60b186723d0350cbaeb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table"
+              }
+            },
+            "Property": "Net Sales  "
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a5489be2b69e192972b5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table"
+              }
+            },
+            "Property": "OrderID"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ceb046fd1b8d76763d55",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table"
+              }
+            },
+            "Property": "Price Per Unit"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a8db52b5509280d00521",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table"
+              }
+            },
+            "Property": "Product ID"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1aa1135101a39f95d499",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table"
+              }
+            },
+            "Property": "Profit"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "fbd887592bf81f82a05b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table"
+              }
+            },
+            "Property": "PromotionID"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e3f262c85c3b31530a90",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table"
+              }
+            },
+            "Property": "Total Sales  "
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "33f043450b0bfa9b4abb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact Table"
+              }
+            },
+            "Property": "Units Sold"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
